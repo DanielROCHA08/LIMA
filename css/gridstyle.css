@@ -1,0 +1,58 @@
+/*Definição do leiaute feral*/
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /*Fundo claro*/
+}
+ 
+/*Contâiner principal configurado com leiatue do tipo grid*/
+.container{
+    display: grid; /*Define o contêiner com leiaute grid */
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer"; /* Defina áreas nomeadas no grid*/
+    grid-template-columns: 250px 1fr; /*Define duas colunas: uma fixa e outra flexível*/
+    grid-template-rows: auto 1fr auto; /*Altura das linhas: cabeçalho e rodapé
+    automáticos, ou seja se adaptam ao conteúdo deles; e conteúdo principal da página
+    flexível*/
+    height: 100vh; /* Contêiner ocupa 100% do viewport.*/
+    gap: 10px; /*Espaço entre as células da grelha (grid)*/
+    padding: 10px; /*Preenchimento interno ao redor do grid*/
+   
+}
+ 
+/*Estilizando cada área do grid*/
+.header{
+    grid-area: header; /*associa esta classe às áreas "header"*/
+    background-color: #213ee6;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ 
+.sidebar{
+    grid-area: sidebar;
+    background-color: #f6e4e4;
+    padding: 20px;
+    border-right: 1px solid #ccccccec;
+}
+.content{
+    grid-area: content;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.201);
+}
+.footer{
+    grid-area: footer;
+    background-color: #333;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+ 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viweport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        .conteiner{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            background-color: dodgerblue;
+            height: 200px;
+        }
+        .conteiner div{
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex</h1>
+    <p>Para usar o flex é necessário haver um elemento ancestral com estilização display: flex</p>
+    <div class="conteiner">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</body>
+</html>

@@ -84,6 +84,11 @@ body{
 .sidebar link a:hover{
     color: var(--secondary-color);
 }
+.sidebar img{
+    width: 105%;
+    margin: 10px 0;
+    border-radius: var(--border-radius);
+}
 .cards{
     width: 70%;
 }
@@ -133,7 +138,17 @@ body{
 }
 /*Media Queries*/
 @media(max-width: 768px){
-    .main-content{
-        flex-direction: column;
+        .main-content{
+            flex-direction: column;
+        }
+    .cards{
+        width: 100%;
+    }
+    .nav-links{
+        display: none;
+    }
+      
+    .menu-toggle{
+        display: block;
     }
 }

@@ -24,3 +24,17 @@ textarea{
     height: 100px;
     resize: vertical;
 }
+.btn-submit{
+    width: 100%;
+    padding: 10px;
+    background: #005a8d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-submit.hover{
+    background: #3c80c9;
+    
+}

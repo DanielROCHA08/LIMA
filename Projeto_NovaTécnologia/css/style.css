@@ -1,4 +1,4 @@
-/*Reset básico de estilopara remover margens e prrenchimentos padrão dos elementos*/
+/*Reset básico de estilo para remover margens e preenchimentos padrão dos elementos*/
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ a{
 header{
     background-color: #005a8d;
     color: white;
-    padding: 2px 0px;
+    padding: 2px 0;
 }
 header nav{
     display: flex;
@@ -46,12 +46,17 @@ header nav ul li a{
 .logo{
     display: flex;
 }
+.logo img{
+    width: 20%;
+    border-radius: 100%;
+}
 .nome{
     width: 70%;
     margin-left: 2px;
+    justify-content: center;
 }
 .nome h1{
-    font-family: "Poppins", sans-serif;
+    font-family: "Peppins", sans-serif;
     font-size: 28px;
     font-weight: 600;
     color: #faf6f6;
@@ -183,7 +188,7 @@ footer{
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 2px 2px 2px rgba(0,0,0, 2.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0, 2.2);
 }
 .content-item ul li:before{
     content: "\2714"; /*Acrescenta um símbolo de "check" antes do elemento selecionado*/
@@ -219,7 +224,7 @@ img{
     .menu-toggle{
         display: block;
     }
-}
+
 /*Esconde o menu por padrão e exibe quando ativado*/
 .menu{
     display: none;
@@ -233,4 +238,5 @@ img{
 }
 .menu li{
     padding: 10px;
+}
 }
